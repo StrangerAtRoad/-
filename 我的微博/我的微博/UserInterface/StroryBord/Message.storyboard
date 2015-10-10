@@ -31,7 +31,7 @@
                     <view key="view" contentMode="scaleToFill" id="zVB-mT-tde">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.88627457620000005" green="0.91764712329999998" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="消息" id="Pc2-Q6-zjk"/>
                 </viewController>

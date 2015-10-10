@@ -9,6 +9,7 @@
 #import "MainTabBarViewController.h"
 #import "BaseNavigationViewController.h"
 #import "UICommns.h"
+#import "ThemeManager.h"
 @interface MainTabBarViewController ()
 {
     UIImageView *_bgTabBarView;
@@ -31,6 +32,7 @@
 }
 #pragma mark - 创建子视图控制器
 -(void)_creatSubViewControllers{
+    
     
     //存放故事板文件名的数组
     NSArray *stroybordNames=@[@"Home",
@@ -74,7 +76,7 @@
     [self.tabBar.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     //标签栏背景图
     _bgTabBarView=[[UIImageView alloc]initWithFrame:self.tabBar.bounds];
-    _bgTabBarView.image=[UIImage imageNamed:@"mask_navbar@2x"];
+    _bgTabBarView.image=[[ThemeManager sharedManager]getThemeImageWithString:@"mask_naviBar"];
     _bgTabBarView.userInteractionEnabled=YES;
     
     [self.tabBar addSubview:_bgTabBarView];
@@ -93,16 +95,16 @@
         
         UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
         button.frame=CGRectMake((kScreenWidth / buttonBgs.count)*j, 0, kScreenWidth / buttonBgs.count, kTabBarHeight);
-        
-        [button setBackgroundImage:[UIImage imageNamed:[buttonBgs objectAtIndex:j]] forState:UIControlStateNormal];
+
+        [button setBackgroundImage:[[ThemeManager sharedManager]getThemeImageWithString:[buttonBgs objectAtIndex:j]] forState:UIControlStateNormal];
         
         [button addTarget:self action:@selector(selectTabBarButton:) forControlEvents:UIControlEventTouchUpInside];
         button.tag=100+j;
         
         [_bgTabBarView addSubview:button];
     }
-    
-    _selectedView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_bottom_tab_arrow"]];
+    UIImage *selectImg=[[ThemeManager sharedManager]getThemeImageWithString:@"home_bottom_tab_arrow"];
+    _selectedView=[[UIImageView alloc]initWithImage:selectImg];
     UIView *view=[_bgTabBarView viewWithTag:100];
     
     _selectedView.frame=view.bounds;

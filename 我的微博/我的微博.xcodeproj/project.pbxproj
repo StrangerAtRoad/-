@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884EE2361BC8AAAB003C2939 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EE2351BC8AAAB003C2939 /* ThemeManager.m */; settings = {ASSET_TAGS = (); }; };
 		885976701BC7E617006DCF0D /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8859766F1BC7E617006DCF0D /* theme.plist */; settings = {ASSET_TAGS = (); }; };
 		885976781BC7E8E5006DCF0D /* skins in Resources */ = {isa = PBXBuildFile; fileRef = 885976771BC7E8E5006DCF0D /* skins */; settings = {ASSET_TAGS = (); }; };
 		886B8FEF1BC755DA00EAE649 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 886B8FEE1BC755DA00EAE649 /* main.m */; };
@@ -674,6 +675,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		884EE2341BC8AAAB003C2939 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		884EE2351BC8AAAB003C2939 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
 		8859766F1BC7E617006DCF0D /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
 		885976771BC7E8E5006DCF0D /* skins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skins; sourceTree = "<group>"; };
 		886B8FEA1BC755DA00EAE649 /* 我的微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1385,6 +1388,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		884EE2331BC8AA6E003C2939 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				884EE2341BC8AAAB003C2939 /* ThemeManager.h */,
+				884EE2351BC8AAAB003C2939 /* ThemeManager.m */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
 		886B8FE11BC755DA00EAE649 = {
 			isa = PBXGroup;
 			children = (
@@ -1432,6 +1444,7 @@
 		886B90041BC759BB00EAE649 /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				884EE2331BC8AA6E003C2939 /* Theme */,
 				886B90141BC75BA300EAE649 /* libWeiboSDK */,
 				886B95781BC7C4C500EAE649 /* UICommns.h */,
 			);
@@ -3133,6 +3146,7 @@
 				886B957E1BC7DCD400EAE649 /* MessageViewController.m in Sources */,
 				886B95871BC7DD0800EAE649 /* MoreViewController.m in Sources */,
 				886B90741BC7A84E00EAE649 /* BaseNavigationViewController.m in Sources */,
+				884EE2361BC8AAAB003C2939 /* ThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

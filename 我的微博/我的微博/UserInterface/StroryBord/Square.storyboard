@@ -31,7 +31,7 @@
                     <view key="view" contentMode="scaleToFill" id="x1i-gM-EJs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.58823531870000001" green="0.92549026010000002" blue="0.91764712329999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="广场" id="YJx-kg-Uzu"/>
                 </viewController>

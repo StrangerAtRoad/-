@@ -31,7 +31,7 @@
                     <view key="view" contentMode="scaleToFill" id="kRo-3X-0WS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98823535439999999" green="0.96470594409999999" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="更多" id="mdI-FY-ova"/>
                 </viewController>
