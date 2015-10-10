@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hIZ-kP-rAV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation View Controller-->
+        <scene sceneID="qfw-qm-nwZ">
+            <objects>
+                <navigationController id="hIZ-kP-rAV" customClass="BaseNavigationViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVo-d8-I4d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zl1-cZ-SDl" kind="relationship" relationship="rootViewController" id="Ted-fi-2HT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsa-s4-Dqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="358"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="3op-NL-VuO">
+            <objects>
+                <viewController title="消息" id="zl1-cZ-SDl" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WJl-mW-1ck"/>
+                        <viewControllerLayoutGuide type="bottom" id="56l-x5-yi8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zVB-mT-tde">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.88627457620000005" green="0.91764712329999998" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="Pc2-Q6-zjk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptK-7T-dTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="242"/>
+        </scene>
+    </scenes>
+</document>

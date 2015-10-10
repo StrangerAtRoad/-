@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ule-7f-At7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation View Controller-->
+        <scene sceneID="Ibd-Ow-aA1">
+            <objects>
+                <navigationController id="ule-7f-At7" customClass="BaseNavigationViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j4e-jl-l07">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CTc-6g-ONK" kind="relationship" relationship="rootViewController" id="B5x-WM-bfg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uej-7O-9Fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="272"/>
+        </scene>
+        <!--更多-->
+        <scene sceneID="tS3-kt-iBV">
+            <objects>
+                <viewController title="更多" id="CTc-6g-ONK" customClass="MoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HBO-X0-OyE"/>
+                        <viewControllerLayoutGuide type="bottom" id="eYC-YT-Qa0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kRo-3X-0WS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98823535439999999" green="0.96470594409999999" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="更多" id="mdI-FY-ova"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPb-r5-ukQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="282"/>
+        </scene>
+    </scenes>
+</document>
